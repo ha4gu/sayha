@@ -1,0 +1,37 @@
+inherit_from:
+  - https://raw.githubusercontent.com/thoughtbot/guides/master/style/ruby/.rubocop.yml
+AllCops:
+  Exclude:
+    - bin/*
+    - db/schema.rb # copied from the inherited file
+    - node_modules/**/*
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/*.rb
+    - spec/**/* # copied from the inherited file
+Layout/LineLength:
+  Max: 120 # Planned new default value of RuboCop 1.0
+  Exclude:
+    - config/environments/*.rb
+    - config/routes.rb
+RSpec/DescribeClass:
+  Exclude:
+    - spec/features/**/*
+RSpec/ExampleLength:
+  Exclude:
+    - spec/features/**/*
+RSpec/MultipleExpectations:
+  Exclude:
+    - spec/features/**/*
+Layout/DotPosition:
+  EnforcedStyle: leading
+Rails/Date:
+  Enabled: true
+  EnforcedStyle: flexible
+Rails/TimeZone:
+  Enabled: true
+  EnforcedStyle: flexible

@@ -16,12 +16,14 @@ gem "webpacker", "~> 4.0"
 group :development do
   gem "listen", "~> 3.2"
   gem "spring"
+  gem "spring-commands-rspec"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
 end
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "rspec-rails"
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false

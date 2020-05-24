@@ -13,11 +13,13 @@ require:
 Metrics/BlockLength:
   Exclude:
     - config/environments/*.rb
+    - config/initializers/devise.rb
     - spec/**/* # copied from the inherited file
 Layout/LineLength:
   Max: 120 # Planned new default value of RuboCop 1.0
   Exclude:
     - config/environments/*.rb
+    - config/initializers/devise.rb
     - config/routes.rb
 RSpec/DescribeClass:
   Exclude:

@@ -17,6 +17,7 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "webpacker", "~> 4.0"
 
 group :development do
+  gem "annotate"
   gem "listen", "~> 3.2"
   gem "spring"
   gem "spring-commands-rspec"
